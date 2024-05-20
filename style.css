@@ -1,0 +1,252 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Roboto";
+}
+
+body {
+    margin: 0 auto;
+    width: 70%;
+    background-color: black;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    background-color: lightgray;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: 
+        "sidebar header"
+        "sidebar content";
+}
+
+
+.sidebar {
+    background-color: cornflowerblue;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-weight: bold;
+}
+
+.icon-logo, .icon {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(180deg);
+}
+
+.icon {
+    padding-left: 0.7rem;
+}
+
+.label-logo {
+    font-size: xx-large;
+}
+
+.label {
+    font-size: x-large;
+}
+
+.header {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-area: header;
+    height: 100%;
+    box-shadow: 0px 17px 20px -20px rgba(0,0,0,0.45);
+}
+
+.header .left {
+    padding-top: 1rem;
+    display: grid;
+    padding-left: 3rem;
+}
+
+.left .top{
+    display: flex;
+    gap: 1rem;
+}
+
+.left .bottom{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.header .right {
+    display: grid;
+}
+
+
+.header > .right > .top {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 2rem;
+}
+
+.header > .right > .bottom {
+    justify-self: center;
+    align-items: center;
+}
+
+.header > .right > .bottom button {
+    margin: 0 10px;
+}
+
+.content {
+    display: grid;
+    padding-top: 1rem;
+    grid-template-columns: 5fr 2fr;
+    gap: 1rem;
+    grid-area: content;
+}
+
+.projects-section {
+    background-color: lightgray;
+}
+
+.project {
+    background-color: lightgray;
+    padding-left: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1.5rem;
+}
+
+
+
+.project .card {
+    background-color: #FFFFFF;
+    color: black;
+    text-align: center;
+    border-radius: 0.5rem;
+    box-shadow:  12px 0 0px -5px rgba(255, 165, 0, 0.7) inset,
+        0px 4px 6px 0px rgba(0,0,0,0.16),
+        0px 3px 6px 0px rgba(0,0,0,0.23);
+    padding: 2rem 2rem;
+    height: 8rem;
+    position:relative;
+}
+
+.card-buttons {
+    text-align: end;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem; 
+
+}
+
+.card p {
+    color: black;
+    font-weight: normal;
+    text-align: left;
+    font-size: 17px;
+    margin: 0; 
+}
+
+.card .title {
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+    margin: 0;
+}
+
+.top > .card p{
+    color: grey;
+    font-weight: lighter;
+    text-align: left;
+    font-size: 12px;
+    margin: 0; 
+}
+
+.top > .card .title {
+    color: black;
+    font-size: 16px;
+    text-align: left;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.side-content-wrapper {
+    background-color: lightgray;
+    display: grid;
+    gap: 1rem;
+    padding-right: 2rem;
+}
+
+.side-content-wrapper .card {
+    background-color: #FFFFFF;
+    color: black;
+    text-align: center;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.16),
+        0px 3px 6px 0px rgba(0,0,0,0.23);
+    padding: 2rem 2rem;
+}
+
+.announcements-section h3, .trending h3{
+    margin-left: 0;
+}
+
+.announcements .card p {
+    color: black;
+    font-weight: normal;
+    text-align: left;
+    font-size: 12px;
+    margin: 0; 
+}
+
+.announcements .card .title {
+    font-size: 17px;
+    text-align: left;
+    font-weight: bold;
+    margin: 0;
+}
+
+.users {
+    display: flex;
+    gap: 1rem;
+}
+
+.users p{
+    font-size: small;
+}
+
+button {
+    background-color: cornflowerblue; 
+    border: none; 
+    color: white; 
+    padding: 10px 25px;
+    text-align: center;
+    font-size: 15px; 
+    font-weight: bold;
+    cursor: pointer; 
+    border-radius: 30px;
+}
+
+button:hover {
+    background-color: gray;
+}
+  
+
+input {
+    width: 98%;
+    height: 1.5rem;
+    border-radius: 2rem;
+    border: 1px solid #E5E7EB;
+    background-color: #E5E7EB;
+}
+
+h3 {
+    margin-left: 1rem;
+}
+
+
